@@ -80,4 +80,22 @@ $(document).ready(function () {
       }
     }   
   });
+
+  $('#submit-mexico').click(function () {
+    const usAmount = $('#usAmount').val();
+    
+    (async () => {
+      let exchange = new Exchange();
+      const response = await exchange.getMoney();
+      getElements(response);
+    })();
+
+    function getElements(response) {
+      if (response) {
+        $('#output').text((usAmount*`${response.conversion_rates.MXN}`));
+      } else {
+        $('#output').text(`The API doesn't work`);
+      }
+    }   
+  });
 });
