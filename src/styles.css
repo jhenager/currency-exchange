@@ -2,3 +2,29 @@
   border: thick;
   border-color: black;
 }
+
+body {
+  background-color:teal;
+  min-height: 500px;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+#output {
+  display: none;
+  text-align: center;
+  background-color: rgb(24, 170, 126);
+  padding: 20px;
+  padding-top: 20px;
+  border-style: solid;
+  border-color: black;
+  max-width: 200px;
+}
+
+.currency {
+  padding-top: 30px;
+}
+

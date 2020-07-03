@@ -5,7 +5,6 @@ import './styles.css';
 import { Exchange } from './../src/exchange.js';
 
 
-
 $(document).ready(function () {
   $('#submit-canada').click(function () {
     const usAmount = $('#usAmount').val();
