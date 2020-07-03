@@ -44,4 +44,40 @@ $(document).ready(function () {
       }
     }   
   });
+
+  $('#submit-europe').click(function () {
+    const usAmount = $('#usAmount').val();
+    
+    (async () => {
+      let exchange = new Exchange();
+      const response = await exchange.getMoney();
+      getElements(response);
+    })();
+
+    function getElements(response) {
+      if (response) {
+        $('#output').text((usAmount*`${response.conversion_rates.EUR}`));
+      } else {
+        $('#output').text(`The API doesn't work`);
+      }
+    }   
+  });
+
+  $('#submit-austrailia').click(function () {
+    const usAmount = $('#usAmount').val();
+    
+    (async () => {
+      let exchange = new Exchange();
+      const response = await exchange.getMoney();
+      getElements(response);
+    })();
+
+    function getElements(response) {
+      if (response) {
+        $('#output').text((usAmount*`${response.conversion_rates.AUD}`));
+      } else {
+        $('#output').text(`The API doesn't work`);
+      }
+    }   
+  });
 });
