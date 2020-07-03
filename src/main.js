@@ -8,7 +8,7 @@ import { Exchange } from './../src/exchange.js';
 
 $(document).ready(function () {
   $('#submit-btn').click(function () {
-    // const usAmount = $('#usAmount').val();
+    const usAmount = $('#usAmount').val();
     // const foreignCurrency = $('#foreignCurrency').val();
 
     (async () => {
@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     function getElements(response) {
       if (response) {
-        $('#output').text(`${response.conversion_rates.CAD}`);
+        $('#output').text((usAmount*`${response.conversion_rates.CAD}`));
       } else {
         $('#output').text(`The API doesn't work`);
       }
