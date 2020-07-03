@@ -19,7 +19,7 @@ $(document).ready(function () {
     
     function getElements(response) {
       if (response) {
-        $('#output').text((usAmount*`${response.conversion_rates.CAD}`));
+        $('#output').text(usAmount*`${response.conversion_rates.CAD}`+" Canadian Dollars");
       } else {
         $('#output').text(`The API doesn't work`);
       }
@@ -38,7 +38,7 @@ $(document).ready(function () {
     
     function getElements(response) {
       if (response) {
-        $('#output').text((usAmount*`${response.conversion_rates.JPY}`));
+        $('#output').text(usAmount*`${response.conversion_rates.JPY}`+" Japanese Yen");
       } else {
         $('#output').text(`The API doesn't work`);
       }
@@ -56,7 +56,7 @@ $(document).ready(function () {
 
     function getElements(response) {
       if (response) {
-        $('#output').text((usAmount*`${response.conversion_rates.EUR}`));
+        $('#output').text(usAmount*`${response.conversion_rates.EUR}`+" Euros");
       } else {
         $('#output').text(`The API doesn't work`);
       }
@@ -74,7 +74,7 @@ $(document).ready(function () {
 
     function getElements(response) {
       if (response) {
-        $('#output').text((usAmount*`${response.conversion_rates.AUD}`));
+        $('#output').text(usAmount*`${response.conversion_rates.AUD}`+" Austrailian Dollars");
       } else {
         $('#output').text(`The API doesn't work`);
       }
@@ -92,7 +92,7 @@ $(document).ready(function () {
 
     function getElements(response) {
       if (response) {
-        $('#output').text((usAmount*`${response.conversion_rates.MXN}`));
+        $('#output').text(usAmount*`${response.conversion_rates.MXN}`+" Mexican Pesos");
       } else {
         $('#output').text(`The API doesn't work`);
       }
