@@ -19,7 +19,7 @@ $(document).ready(function () {
     
     function getElements(response) {
       if (response) {
-        $('#output').text(usAmount*`${response.conversion_rates.CAD}`+" Canadian Dollars");
+        $('#output').text(Math.round((usAmount*`${response.conversion_rates.CAD}`)*100)/100 + " Canadian Dollars");
       } else {
         $('#output').text(`The API doesn't work`);
       }
