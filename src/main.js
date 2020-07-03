@@ -8,6 +8,7 @@ import { Exchange } from './../src/exchange.js';
 $(document).ready(function () {
   $('#submit-canada').click(function () {
     const usAmount = $('#usAmount').val();
+    $("#output").show();
     
     (async () => {
       let exchange = new Exchange();
@@ -27,6 +28,7 @@ $(document).ready(function () {
 
   $('#submit-japan').click(function () {
     const usAmount = $('#usAmount').val();
+    $("#output").show();
     
     (async () => {
       let exchange = new Exchange();
@@ -46,6 +48,7 @@ $(document).ready(function () {
 
   $('#submit-europe').click(function () {
     const usAmount = $('#usAmount').val();
+    $("#output").show();
     
     (async () => {
       let exchange = new Exchange();
@@ -64,6 +67,7 @@ $(document).ready(function () {
 
   $('#submit-austrailia').click(function () {
     const usAmount = $('#usAmount').val();
+    $("#output").show();
     
     (async () => {
       let exchange = new Exchange();
@@ -82,6 +86,7 @@ $(document).ready(function () {
 
   $('#submit-mexico').click(function () {
     const usAmount = $('#usAmount').val();
+    $("#output").show();
     
     (async () => {
       let exchange = new Exchange();
