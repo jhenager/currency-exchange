@@ -12,7 +12,8 @@ body {
   text-align: center;
   padding: 30px;
   margin-top: 30px;
-  background-color: pink;
+  background-color: rgb(241, 205, 211);
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #output {
